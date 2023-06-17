@@ -1,12 +1,8 @@
 def solution(arr, commands):
     result = []
-    k= []
     answer = []
     for i in commands:
-        result.append(arr[i[0]-1:i[1]])
-        k.append(i[2]-1)
-    for i in result:
-        i.sort()
-    for i in range(len(result)):
-        answer.append(result[i][k[i]])
+        N_arr= (arr[i[0]-1:i[1]])
+        N_arr.sort()
+        answer.append(N_arr[i[2]-1])
     return answer
