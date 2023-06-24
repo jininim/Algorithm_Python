@@ -1,8 +1,6 @@
 def solution(name, yearning, photo):
-    answer = {}
+    answer = dict(zip(name,yearning))
     result = []
-    for i in range(len(name)):
-        answer[name[i]] = yearning[i]
     for i in photo:
         sum = 0
         for j in i:
